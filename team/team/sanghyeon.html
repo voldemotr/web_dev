@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <!-- 상단바 꾸미기 : 네비게이션(메뉴), 링크, 검색바 사용-->
+ <nav class="navbar navbar-expand-md navbar-light bg-white mb-4 fixed-top">
+    <a class="navbar-brand" href="#">
+        <img src="https://cdn.pixabay.com/photo/2013/07/12/19/21/bong-154631_960_720.png" width="150px" alt="star"> <h6><b>All about a Bong</h6></b>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="junseock.html"><h5>봉준호 소개<sub>[신준석]</sub></h5></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="sanghyeon.html"><h5>봉준호 경력<sub>[주상현]</sub></h5></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="jinok.html"><h5>봉준호 작품<sub>[황진옥]</sub></h5></a>
+            </li>
+        </ul>
+
+
+<!-- 검색링크 달아주기 검색연결사이트:www.google.com -->
+    <form action="https://search.naver.com/search.naver?=" class="form-inline mt-2 mt-md-0" target="_blank">
+            <input class="form-control mr-sm-2" type="text" placeholder="검색하기" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">SEARCH</button>
+        </form>
+    </div>
+</nav>
+<div class="container p-4 mt-5">
+
+
+<!-- 메인사진 커버용 이미지를 꾸미기 위한 : Bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+    
+    
+    <style>
+        /* 태그 선택자 */
+        body {
+            background-color: #eeeeee;
+        }
+        table, td {
+            /* 1px, 실선, 검은색의 외곽선 추가 */
+            border: 1px solid black;
+        }
+        table { 
+            width: 95%;
+            /* 표의 외곽선 겹치게 (collapse)*/
+            border-collapse: collapse;
+        }
+        td {
+            max-width: 180px;
+            height: 40px;
+        }
+        /* 가상 선택자 */
+        td:hover {
+            /* 커서를 가져다댔을 때 배경색 회색 & 폰트색 하양 */
+            background-color: grey;
+            color: white;
+        }
+        td:active {
+            /* 클릭한 상태일 때 배경색 검은색 & 폰트색 하양 */
+            background-color: black;
+            color: white;
+        }
+        td>img {
+            width: 100%;
+        }
+        h1 {
+            /* 글씨 색깔 #ffffff, 텍스트 가운데 정렬 */
+            color: white; 
+            text-align: center;
+        }
+        a:visited {
+            /* visited는 색으로만 구분 가능 */
+            color: green;
+        }
+        a {
+            color: initial;
+            text-decoration: initial;
+        }
+        /* 속성 선택자 */
+        input[type='text'] {
+            width: 50%;
+        }
+        input[type='text']:focus {
+            background-color: tomato;
+            color: white;
+        }
+        input[type='text']::placeholder {
+            color: royalblue;
+        }
+        /* 클래스 선택자 */
+        .center {
+            margin: auto;
+        }
+        .bold {
+            /* 폰트 굵기 : 굵게 */
+            font-weight: bold;
+        }
+        .vbottom{
+            /* 수직 정렬 : 중간 */
+            vertical-align: middle;
+        }
+        .f20{
+            /* 폰트 크기 : 20px */
+            font-size: 20px;
+            font-weight: bold;
+            
+        }
+        /* 꼬리말 폰트 정렬 : 중간, 배경색 : 그레이,  */
+        .footer {
+            text-align: center;
+            background-color: gray;            
+        }
+        /* 아이디 선택자 */
+        #wrap {
+            width: 50%;
+            max-width: 1000px;
+            min-width: 1000px;
+        
+            border: 1px solid black;
+            background: url(https://ww.namu.la/s/644b09025cb207eed58ad97c14ca97ead637aeaa516ae830e2672bd4990ad5e9e703e5e355a5491227eb68c58de2c809699e33a756c6d4f3e4e1f565f3442172ad85c5d22f2999841454cf4b779392e93f7ce76fc099745454424c7b235cd08e) top/15% repeat-x;             
+        }
+        #firstline{
+            color: black;
+            background-image: linear-gradient(
+                to top right,
+                #dba20415 0%,
+                #ffee00 33%,
+                #fcb737 66%,
+                #f8ca4a 100%
+              )
+        }
+    </style>
+</head>
+
+<body style="background-color: #eeeeee;">
+    <br>
+    <br>
+    <br>
+    <p style="text-align: center;"><em><del>수상 경력이 너무 많아서 간략하게...</em></del></p>
+    <div id="wrap" class="center">
+        <h1>봉준호 수상경력</h1>
+        <!-- 테이블 생성, 텍스트 중간으로 설정 -->
+        <table class="center" style="text-align: center;">
+            <tbody>
+            <tr id="firstline" class="bold vbottom">
+                <td>수상영화제</td>
+                <td>사진</td>
+                <td>영화제목<br>연도</td>
+                <td>수상경력</td>
+            </tr>
+            <tr>
+                <td class="f20"><a href="https://movie.naver.com/movie/bi/fi/basic.nhn?code=6" target="blank">미국 아카데미상</a></td>
+                <td><img src="https://mimg.segye.com/content/image/2020/01/14/20200114500144.jpg"
+                ></td>
+                <td style="text-align: center;">기생충<br>2020년</td>
+                <td><ul>
+                    <li>최우수 작품상</li>
+                    <li>최우수 감독상</li>
+                    <li>최우수 각본상</li>
+                    <li>최우수 국제영화상</li>
+                </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="f20"><a href="https://movie.naver.com/movie/bi/fi/prize.nhn?code=5&rnd=77" target="blank">골든글로브상</a></td>
+                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRNDraglDM7mdBaZHwwfFWYSGVl85KK0mlReSR8t3gG9jb4xl5F"
+                ></td>
+                <td style="text-align: center;">기생충<br>2020년</td>
+                <td><ul>
+                    <li>최우수 외국어 영화상</li>
+
+                </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="f20"><a href="https://movie.naver.com/movie/bi/fi/prize.nhn?code=7&rnd=73" target="blank">영국아카데미상<br>(BAFTA)</a></td>
+                <td><img src="https://img9.yna.co.kr/photo/yna/YH/2020/02/03/PYH2020020301080034000_P4.jpg"
+></td>
+                <td>기생충<br>2020년</td>
+                <td><ul>
+                    <li>최우수 각본상</li>
+                    <li>최우수 외국어 영화상</li>
+                </ul></td>
+            </tr>
+            </tbody>
+            <tfoot >
+                <tr>
+                    <td></td><td></td><td></td>
+                    <td class="f20"><a href="https://ko.wikipedia.org/wiki/%EB%B4%89%EC%A4%80%ED%98%B8%EC%9D%98_%EC%88%98%EC%83%81_%EB%B0%8F_%ED%9B%84%EB%B3%B4_%EB%AA%A9%EB%A1%9D#%EB%AF%B8%EA%B5%AD_%EC%95%84%EC%B9%B4%EB%8D%B0%EB%AF%B8%EC%83%81" target="blank">그 외 수상경력</a>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <footer class="footer" style="width:  1000px; height: 200;overflow: hidden; margin: auto; color: white;" >
+         <b>(주)봉쓰와 아이들</b>
+            <ul>
+                <b>신준석</b>
+                <b>황진옥</b>
+                <b>주상현</b>
+            </ul>
+    </footer>
+</body>
+</html>
