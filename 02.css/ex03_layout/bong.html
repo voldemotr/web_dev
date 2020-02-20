@@ -5,13 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>봉준호 감독</title>
 </head>
-<body>
-     <div id="top">
-        <a href="#info">인적사항</a>
-        <a href="#education">학력</a>
-        <a href="#career">경력</a>
-        <a href="#works">주요작품</a>
-    </div>
+    <body style="background-color: #eeeeee;" >
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <link href="C:\web_dev\01.html\teamcss.css" rel="stylesheet">
+        <nav class="navbar navbar-expand-md navbar-light bg-white mb-4 fixed-top">
+            <!-- 상단바 꾸미기-->
+            <a class="navbar-brand" href="#">
+                <img src="https://image.shutterstock.com/image-vector/abstract-falling-star-black-shooting-260nw-1051089614.jpg" width="550px" height="130" alt="star"> 
+                <!-- 메인 이미지의 폰트 속성과 색상을 꾸밈  -->
+               <span style="font: italic bold 1.5em/1em georgia, serif; color: green"> <h1><b>Bongs and children</h1></b></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><h3>봉준호 소개</h3>chapter1<br>신준석</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><h3>봉준호 경력</h3>chapter2<br>황진옥</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><h3>봉준호 작품</h3>chapter3<br>주상현</a>
+                    </li>
+                </ul>
+
+
+        <form class="form-inline mt-2 mt-md-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="검색하기" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">SEARCH</button>
+                </form>
+            </div>
+        </nav>
+        <div class="container p-4 mt-5">
+
+            <div id="top">
+                <ul>
+                    <li><a href="#info">인적사항</a></li>
+                    <li><a href="#education">학력</a></li>
+                    <li><a href="#career">경력</a></li>
+                    <li><a href="#works">주요작품</a></li>
+                </ul>
+            </div>
+            <!-- 메뉴바를 이용한 감독 소개 링크를 하고 싶었으나.. 잘되질않았습니다.. -->
+            <style>
+                ul {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-evenly;
+                }
+
+                li {
+                    list-style-type: none;
+                }
+                
+                a {
+                    display: block;
+                    padding: 6px 18px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    font-weight: bold;
+                    color: #333;
+                    transition: all 0.3s ease-in-out;
+                }
+        </style>
+          <!-- 가운데 정렬 -->
     <div style="max-width: 1000px; margin: 0 auto;">
         <h1>감독 소개</h1>
         <hr>
@@ -22,12 +90,21 @@
             <b>성별</b> : 남성<br>
             <b>생년월일</b> : 1969년 09월 14일<br>
             <b>출생지</b> : 대구직할시 남구 봉덕동<br>
-            <b>직업</b> : 각본가,감독<br>
+            <b>종교</b> : 천주교<br>
+            <b>부모</b> : 父=봉상균 , 母=박소영<br>
+            <b>형제자매</b> : 2남 2녀중 막내 형=봉준수, 누나=봉지희<br>
+            <b>배우자</b> : 정선영<br>
+            <b>자녀</b> : 子= 봉효민<br>
         </p>
         <hr>
         <h2 id="education">학력</h2>
         <ul>
-            <li><ins>대구남도초등학교(전학)</ins></li>
+            <li><ins>대구남도초등학교</ins></li> 
+            <select name="sort">
+                <!-- 콤보박스의 선택 항목을 이용해 재밌게 ..해보려고 했습니다 -->
+                <option value="rel" selected>click!!!!!!!!!</option>
+                <option value="price_asc">서울로 전학을 가고 그의 인생이 달라졌다</option>
+            </select>
             <li><ins>잠실고등학교(졸업)</ins></li>
             <li><ins>연세대학교 사회학(학사)</ins></li>
             <li><ins>한국영화아카데미</ins></li>
@@ -35,6 +112,7 @@
         <hr>
         <h2 id="career">경력</h2>
         <table border="1">
+            <!-- 테이블 가운데 정렬 -->
             <head>
                 <style>
                 table, td{
@@ -45,125 +123,125 @@
                 }
                 </style>
             </head>
-            
+            <!-- 굵게 -->
         <tr>
             <th>연도</th>
             <th>장소</th>
             <th>직책</th>
         </tr>
         
-        
+        <!-- 연도는 가늘고, 장소 직책은 굵게 표현 -->
         <tr>
             <td>2020</td>
-            <th scope="row">로테르담 영화제</th>
-            <td>마스터 클래스</td>
+            <th>로테르담 영화제</th>
+            <th>마스터 클래스</th>
         </tr>
         <tr>
             <td>2019</td>
-            <th scope="row">뤼미에르 영화제</th>
-            <td>마스터 클래스</td>
+            <th>뤼미에르 영화제</th>
+            <th>마스터 클래스</th>
         </tr>
         <tr>
             <td>2019</td>
-            <th scope="row">뮌휀 국제 영화제</th>
-            <td>마스터 클래스</td>
+            <th>뮌휀 국제 영화제</th>
+            <th>마스터 클래스</th>
         </tr>
         <tr>
             <td>2017</td>
-            <th scope="row">토론토 국제 영화제</th>
-            <td>마스터 클래스</td>
+            <th>토론토 국제 영화제</th>
+            <th>마스터 클래스</th>
         </tr>
         <tr>
             <td>2015</td>
-            <th scope="row">베를린 국제 영화제</th>
-            <td>심사위원</td>
+            <th>베를린 국제 영화제</th>
+            <th>심사위원</th>
         </tr>
         <tr>
             <td>2015</td>
-            <th scope="row">베를린 국제 영화제</th>
-            <td>마스터 클래스</td>
+            <th>베를린 국제 영화제</th>
+            <th>마스터 클래스</th>
         </tr>
         <tr>
             <td>2014</td>
-            <th scope="row">부산 국제 영화제</th>
-            <td>심사위원</td>
+            <th>부산 국제 영화제</th>
+            <th>심사위원</th>
         </tr>
         <tr>
             <td>2014</td>
-            <th scope="row">부산 국제 판타스틱 영화제</th>
-            <td>심사위원장</td>
+            <th>부산 국제 판타스틱 영화제</th>
+            <th>심사위원장</th>
         </tr>
         <tr>
             <td>2013</td>
-            <th scope="row">마르델플라타 국제 영화제</th>
-            <td>심사위원</td>
+            <th>마르델플라타 국제 영화제</th>
+            <th>심사위원</th>
         </tr>
         <tr>
             <td>2013</td>
-            <th scope="row">마르델플라타 국제 영화제</th>
-            <td>마스터 클래스</td>
+            <th>마르델플라타 국제 영화제</th>
+            <th>마스터 클래스</th>
         </tr>
         <tr>
             <td>2013</td>
-            <th scope="row">에든버러 국제 영화제</th>
-            <td>심사위원장</td>
+            <th>에든버러 국제 영화제</th>
+            <th>심사위원장</th>
         </tr>
         <tr>
             <td>2011</td>
-            <th scope="row">칸 국제 영화제</th>
-            <td>황금카메라상 심사위원장</td>
+            <th>칸 국제 영화제</th>
+            <th>황금카메라상 심사위원장</th>
         </tr>
         <tr>
             <td>2011</td>
-            <th scope="row">선댄스 국제 영화제</th>
-            <td>심사위원</td>
+            <th>선댄스 국제 영화제</th>
+            <th>심사위원</th>
         </tr>
         <tr>
             <td>2010</td>
-            <th scope="row">런던 국제 영화제</th>
-            <td>마스터 클래스</td>
+            <th>런던 국제 영화제</th>
+            <th>마스터 클래스</th>
         </tr>
         <tr>
             <td>2010</td>
-            <th scope="row">뉴욕 국제 영화제</th>
-            <td>마스터 클래스</td>
+            <th>뉴욕 국제 영화제</th>
+            <th>마스터 클래스</th>
         </tr>
         <tr>
             <td>2009</td>
-            <th scope="row">산세바스티안 국제 영화제</th>
-            <td>심사위원</td>
+            <th>산세바스티안 국제 영화제</th>
+            <th>심사위원</th>
         </tr>
         <tr>
             <td>2009</td>
-            <th scope="row">제천 국제 영화제</th>
-            <td>명예 홍보대사</td>
+            <th>제천 국제 영화제</th>
+            <th>명예 홍보대사</th>
         </tr>
         <tr>
             <td>2008</td>
-            <th scope="row">브뤼셀 국제 판타스틱 영화제</th>
-            <td>심사위원</td>
+            <th>브뤼셀 국제 판타스틱 영화제</th>
+            <th>심사위원</th>
         </tr>
         <tr>
             <td>2008</td>
-            <th scope="row">전주 국제 영화제</th>
-            <td>심사위원</td>
+            <th>전주 국제 영화제</th>
+            <th>심사위원</th>
         </tr>
         <tr>
             <td>2006</td>
-            <th scope="row">상하이 국제 영화제</th>
-            <td>심사위원</td>
+            <th>상하이 국제 영화제</th>
+            <th>심사위원</th>
         </tr>
         <tr>
             <td>2005</td>
-            <th scope="row">도쿄 국제 영화제</th>
-            <td>심사위원</td>
+            <th>도쿄 국제 영화제</th>
+            <th>심사위원</th>
         </tr>
      
     </table>
     <hr>
     <h2 id="works">주요작품</h2>
     <form action="https://ko.wikipedia.org/wiki/%EB%B4%89%EC%A4%80%ED%98%B8%EC%9D%98_%EC%9E%91%ED%92%88_%EB%AA%A9%EB%A1%9D" name="work">
-     검색 : <input type="text" name="query" placeholder="그외 영화 입력해주세요" required><br>
+     검색 : <input type="text" name="query" placeholder="그외 영화 입력해주세요" required><br><br>
       <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -217,7 +295,7 @@
                     </p>
                 </div>
                 <a href="https://terms.naver.com/entry.nhn?docId=972844&cid=42619&categoryId=42619"
-                    class="btn btn-primary d-block mx-auto my-3 stretched-link" target="_blank">자세히 보기</a>
+                    class="btn btn-primary d-block mx-auto my-3 stretched-link" target="_blank">그 기대감을 가지고 go!</a>
             </section>
             <footer class="card-footer text-right small">
                 그는
@@ -236,7 +314,7 @@
                     1969년생 봉준호는 1988년 연세대 사회학과를 졸업하고 1994년 한국영화아카데미 11기로 입학했다. 그의 이름이 영화계에서 조금씩 알려진 건 졸업 작품이었던 단편영화<지리멸렬>이었다. 사회 부조리를 블랙 코미디로 풀어낸 이 작품은 밴쿠버영화제,홍콩영화제에 초청되며 신인 감독에 대한 기대감을 조금씩 키워가고 있었다. 영화 <플란다스의개>(2000)는 봉준호가 32살에 처음으로 촬영한 장편 영화다. 한국영화아카데미를 졸업하고 나서 4년 반만에 그는 '장편 데뷔작'을 발표했다(데뷔작은 1994년에 발표한 단편 영화<백색인>)그는 이를 두고 자신이 다른 동기보다 운이 좋은 편이었다고 했다.<플란다스의 개>의 플롯은 간단하다.한 마디로 아파트에서 벌어지는 연쇄 강아지 실종 사건과 이를 추적하는 사람의 이야기다. 봉준호 감독은 우리 주변에서 흔하게 볼 수 있는 평범한 사람들과 이를 둘러싼 이야기를 미스터리 스릴러 형식으로 풀어낸다.
                 </div>
                 <a href="https://blog.naver.com/neoissue5/221552789845"
-                    class="btn btn-primary d-block mx-auto my-3 stretched-link" target="_blank">자세히 보기</a>
+                    class="btn btn-primary d-block mx-auto my-3 stretched-link" target="_blank">봉준호 인생의 시작</a>
             </section>
             <footer class="card-footer text-right small">
                 대단하다
@@ -245,7 +323,13 @@
     </div>
 </main>
 <footer class="footer">
-    <div class="container-fluid mt-3 p-3 text-center bg-secondary text-white">COPYRIGHT &copy; 2020</div>
+    <div class="container-fluid mt-3 p-3 text-center bg-secondary text-black"> (주)봉쓰와 아이들
+        <ul>
+            <b>신준석</b>
+            <b>주상현</b>
+            <b>황진옥</b>
+        </ul>
+    </div>
 </footer>
 <!-- Optional JavaScript -->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
