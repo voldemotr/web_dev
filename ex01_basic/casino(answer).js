@@ -11,7 +11,7 @@ const name = prompt("이름을 입력해주세요!");
 const chance = 0.3
 
 // 값의 표현
-// money, id, name이란 id를 가진 html 요소에 해당 변수 값을 입력 (document.getElementById().innerHTML 활용)
+// money, play, name이란 id를 가진 html 요소에 해당 변수 값을 입력 (document.getElementById().innerHTML 활용)
 document.getElementById("money").innerHTML = money
 document.getElementById("play").innerHTML = play
 document.getElementById("name").innerHTML = name
